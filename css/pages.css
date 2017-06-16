@@ -1,0 +1,36 @@
+
+#visual{
+
+    margin-top: 4%;
+}
+
+.navbar{
+    background-color: #0079c1;
+    border: #0079c1 ;
+
+}
+
+.navbar-brand{
+    padding-top: 10px;
+    padding-left: 40px;
+    font-size: 30px;
+
+}
+
+.glyphicon{
+
+    color:#fbb034;
+    font-weight: 700;
+}
+
+.navbar-right{
+
+    padding-right:40px;
+    font-size: 20px;
+    color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a{
+    color: white;
+    font-size: 20px;
+}

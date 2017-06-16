@@ -1,0 +1,146 @@
+body{
+
+    margin-top:60px;
+}
+
+.modal {
+
+    position: relative;
+}
+
+@media screen and (min-width: 750px) {
+    .modal:before {
+        display: inline-block;
+        content: " ";
+        width: 100px;
+        height: 100%;
+        margin-left: -30px;
+        margin-right: -30px;
+    }
+}
+
+.modal-dialog {
+    display: inline-block;
+    text-align: left;
+    width: 60%;
+}
+
+.modal-body {
+    font-size: 11px;
+    text-align: left;
+    padding-left: 5px;
+}
+
+.roleButton {
+
+    -webkit-appearance: default-button;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.navbar {
+
+    height: 50px;
+    background: #24292e;
+}
+
+.navbar-inverse .navbar-brand {
+
+    color: #efefef;
+    font-size: 20px;
+
+}
+
+.navbar-inverse .navbar-brand:hover, .navbar-inverse .navbar-brand:active {
+
+    font-size: 20px;
+}
+
+.navbar-right {
+
+    margin-right: 20px;
+}
+
+.btn-social-icon {
+
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+}
+
+.fa {
+
+    color: white
+}
+
+#keyDomain{
+
+    margin-left: 100px;
+    padding-top:15px;
+}
+
+.BI kbd {
+    font-weight: bold;
+    background-color: #ff6c5f;
+}
+
+.viz kbd{
+    font-weight: bold;
+    background-color: #ffc168;
+
+}
+
+.analytics kbd{
+    font-weight: bold;
+    background-color: #1cc7d0;
+
+}
+
+#resume kbd{
+    margin-left:5px;
+    background-color: #56a0d3;
+}
+
+#resume .fa{
+    font-size: 20px;
+}
+
+
+.topwell{
+
+    margin-left: 3%;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.topwell.project kbd{
+    background-color:#6a737b;
+}
+@media (max-width: 768px) {
+
+    .btn-group {
+
+        display: none;
+    }
+
+    #keyDomain{
+
+        visibility: hidden;
+    }
+    .topwell{
+
+     margin: 0px;
+
+    }
+    .topwell.project{
+        padding-top:10px;
+    }
+
+    .navbar-right{
+        visibility: hidden;
+    }
+}

@@ -1,0 +1,76 @@
+.node {
+    cursor: pointer;
+}
+
+text {
+    font-family: Palatino;
+
+}
+
+.node rect {
+    cursor: move;
+    fill-opacity: .9;
+    shape-rendering: crispEdges;
+}
+
+.node text {
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff;
+}
+
+.link {
+    fill: none;
+    stroke: #000;
+    stroke-opacity: .2;
+}
+
+.link:hover {
+    stroke-opacity: .5;
+}
+
+.mainTitle {
+    text-anchor: right;
+    font-family: Palatino;
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+    position: absolute;
+
+}
+
+/* Time line related */
+
+.axis--y path {
+
+    stroke: #ffc168;
+    stroke-opacity: 0.5;
+    stroke-width: 10;
+    shape-rendering: crispEdges;
+
+}
+
+.axis .tick line {
+    visibility: hidden;
+}
+
+.axis text {
+
+    font-size: 16px;
+    font-weight: bold;
+    fill: #6a737b;
+}
+
+.work {
+
+    font-size: 14px;
+}
+
+.work.company {
+
+    font-size: 14px;
+
+}
+
+.edu.major{
+    font-size: 11px;
+}

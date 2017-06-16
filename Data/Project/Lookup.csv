@@ -1,0 +1,13 @@
+IndustryID,IndustryName,ActivityID,ActivityName,TechnologyID,TechnologyName
+I1,Retail,A1,Sales Analysis,T1,Tableau
+I2,Government,A2,Data Visualisation,T2,D3.js
+I3,Association & Non-Profits,A3,Web Analytics,T3,PowerBI
+I4,Communications,A4,Executive Dashboards,T4,DOMO
+I5,Education,A5,HR Analytics,T5,JavaScript/jQuery
+I6,Life Sciences ,A6,Operations ,T6,R
+I7,Insurance,A7,Social Media ,T7,MicroStrategy
+I8,Media & Entertainment ,A8,Market Basket Analysis,T8,Shiny
+I9,Sports,A9,Temporal-Spatial Analysis,T9,Python
+I10,Utilities,A10,Supply Chain,T10,Bootstrap
+I11,Manufacturing ,A11,GIS,T11,Angular
+I12,Banking & Finance ,A12,Forecast/Prediction,T12,
