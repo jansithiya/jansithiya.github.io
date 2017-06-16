@@ -52,7 +52,7 @@ var ProjectTooltip = d3.select("body")
     .style("visibility", "hidden");
 
 // Fetch the data and process it
-d3.csv("./data/Project/portfolio.csv", function (error, data) {
+d3.csv("./Data/Project/portfolio.csv", function (error, data) {
 
     if (error) throw error;
 
