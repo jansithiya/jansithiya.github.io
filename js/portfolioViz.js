@@ -203,8 +203,8 @@ function draw(flowData) {
 // add the link titles
     link.append("title")
         .text(function (d) {
-            return d.source.name + " → " +
-                d.target.name + "\n" + (d.value);
+            return flowData.nodesTitle[d.source.name] + " --> " +
+                flowData.nodesTitle[d.target.name];
         });
 
     //domain for colorIndustry
@@ -317,7 +317,10 @@ function draw(flowData) {
             return "translate(" + d.x + "," + d.y + ")";
         });
 // add the rectangles for the nodes
-    node.append("rect")
+    node.append("a")
+        .attr("xlink:href", function(d){ if(d.name.startsWith("P")){return flowData.nodesUrl[d.name]}})
+        .append("rect")
+        .attr("class","nodeRect")
         .attr("height", function (d) {
             return d.dy;
         })
@@ -336,16 +339,20 @@ function draw(flowData) {
 
         })
         .style("stroke", "none")
-        .style("cursor", "pointer")
+        .style("cursor", function (d) {
+            if (d.name.startsWith("P")) {
+                return "pointer";
+            }
+            else {
+                return "default"
+            }
+        })
         .on("mouseover", function (e) {
             node_mouseHover(e, flowData.links)
         })
         .on("mouseout", node_mouseOut)
-        .on("click", node_onClick)
         .append("title")
-        .text(function (d) {
-            return d.name;
-        });
+        .text(function(d){ return flowData.nodesDesc[d.name];});
 
     node.append("text")
         .attr("x", -6)
@@ -367,8 +374,8 @@ function draw(flowData) {
             }
         })
         .attr("text-anchor", "start")
-        .attr("font-size",function(d){
-            if(d.name.startsWith("P")){
+        .attr("font-size", function (d) {
+            if (d.name.startsWith("P")) {
                 return "10px";
             }
         })
@@ -384,16 +391,12 @@ function node_mouseHover(e, links) {
     d3.selectAll(".link").filter(function (d) {
         return d.source.name == e.name;
     }).style("stroke-opacity", 0.5);
-
 }
 
 function node_mouseOut() {
 
-    d3.selectAll(".link").style("stroke-opacity", 0.2)
+    d3.selectAll(".link").style("stroke-opacity", 0.2);
 }
 
-function node_onClick() {
 
 
-
-}
