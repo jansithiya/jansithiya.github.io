@@ -190,7 +190,7 @@ function renderTimeline(workData) {
         .attr("height", function (d) {
             return yScale(d.from) - yScale(d.to)
         })
-        .attr('x', 5)
+        .attr('x', -5)
         .attr("y", function (d) {
             return (yScale(d.to) + 40);
         })
@@ -208,7 +208,6 @@ function renderTimeline(workData) {
         .attr("height", function (d) {
             return yScale(d.from) - yScale(d.to)
         })
-        .attr('x', 10)
         .attr("y", function (d) {
             if (d.eduID == 1) {
                 return (yScale(d.to) + 90);
@@ -235,7 +234,6 @@ function renderTimeline(workData) {
         .attr("height", function (d) {
             return yScale(d.from) - yScale(d.to)
         })
-        .attr('x', 10)
         .attr("y", function (d) {
 
             return (yScale(d.to) + 100)
