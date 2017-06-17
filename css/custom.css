@@ -105,12 +105,12 @@ body{
 
 }
 
-#resume kbd{
+.resume kbd{
     margin-left:5px;
     background-color: #56a0d3;
 }
 
-#resume .fa{
+.resume .fa{
     font-size: 20px;
 }
 
@@ -125,6 +125,12 @@ body{
 
 .topwell.project kbd{
     background-color:#6a737b;
+}
+
+
+footer{
+
+    margin-left: 30%;
 }
 @media (max-width: 768px) {
 
@@ -149,5 +155,11 @@ body{
     .navbar-right{
         visibility: hidden;
     }
+
+    footer{
+        margin: 0;
+    }
 }
+
+
 
