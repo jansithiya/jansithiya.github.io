@@ -74,3 +74,11 @@ text {
 .edu.major{
     font-size: 11px;
 }
+
+.legendTitle{
+
+    text-align: center;
+    text-decoration: underline;
+    color: #252525
+
+}

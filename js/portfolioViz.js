@@ -1,9 +1,11 @@
 // Define svg dimension attributes
 var margin = {top: 20, right: 20, bottom: 50, left: 80},
+    margin2 = {top: 10, right: 40, bottom: 20, left: 20},
     divWidth = document.getElementById("mainViz").clientWidth,  //use the width of div based on Bootstrap grid
     width = divWidth - margin.left - margin.right,
     height = 600 - margin.top - margin.bottom;
-
+height2 = 200 - margin2.top - margin2.bottom;
+width2 = divWidth - margin2.left - margin2.right;
 var color = d3.scaleOrdinal(d3.schemeCategory20);
 
 // append the svg canvas to the page
@@ -13,6 +15,12 @@ var svg = d3.select("#mainViz").append("svg")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
+var svg2 = d3.select("#legendViz").append("svg")
+    .attr("width", width2 + margin2.left + margin2.right)
+    .attr("height", height2 + margin2.top + margin2.bottom)
+    .append("g")
+    .attr("transform", "translate(" + margin2.left + "," + margin2.top + ")");
+
 var widthGap = margin.left;
 var sankey = d3.sankey()
     .nodeWidth(25)
@@ -21,7 +29,7 @@ var sankey = d3.sankey()
 
 var path = sankey.link();
 
-var colorPalette10 = ["4E79A7", "E15759", "76B7B2", "EDC948", "B07AA1", "FF9DA7", "9C755F", "BAB0AC"];
+var colorPalette10 = ["#4e79a7", "#e15759", "#76b7b2", "#EDC948", "#B07AA1", "#FF9DA7", "#9C755F", "#BAB0AC"];
 var colorPalette20 = ["4E79A7", "A0CBE8", "F28E2B", "FFBE7D", "59A14F", "8CD17D", "B6992D", "F1CE63", "499894", "86BCB6", "E15759", "FF9D9A", "79706E", "BAB0AC", "D37295",
     "FABFD2", "B07AA1", "D4A6C8", "9D7660", "D7B5A6"];
 var colorBlind = ["#1170AA", "FC7D0B", "#A3ACB9", "#57606C", "#5FA2CE", "#C85200", "#7B848F"]
@@ -318,9 +326,13 @@ function draw(flowData) {
         });
 // add the rectangles for the nodes
     node.append("a")
-        .attr("xlink:href", function(d){ if(d.name.startsWith("P")){return flowData.nodesUrl[d.name]}})
+        .attr("xlink:href", function (d) {
+            if (d.name.startsWith("P")) {
+                return flowData.nodesUrl[d.name]
+            }
+        })
         .append("rect")
-        .attr("class","nodeRect")
+        .attr("class", "nodeRect")
         .attr("height", function (d) {
             return d.dy;
         })
@@ -352,7 +364,9 @@ function draw(flowData) {
         })
         .on("mouseout", node_mouseOut)
         .append("title")
-        .text(function(d){ return flowData.nodesDesc[d.name];});
+        .text(function (d) {
+            return flowData.nodesDesc[d.name];
+        });
 
     node.append("text")
         .attr("x", -6)
@@ -379,6 +393,38 @@ function draw(flowData) {
                 return "10px";
             }
         })
+
+
+    //legend for industry
+
+    var legendWidth = width / IndustryName.length, legendHeight = 20, angle = 90;
+
+    var legend = svg2.selectAll(".legend")
+        .data(IndustryName)
+        .enter()
+        .append("rect")
+        .attr("x", function (d, i) {
+            return (i * legendWidth)
+        })
+        .attr("width", legendWidth)
+        .attr("height", legendHeight)
+        .attr("fill", function (d) {
+            return colorIndustry(d)
+        });
+
+    var text2 = svg2.selectAll(".legendText")
+        .data(IndustryName)
+        .enter()
+        .append("text")
+        .attr("x", function (d, i) {
+            return (i * legendWidth) + 10
+        })
+        .attr("y", legendHeight + 15)
+        .text(function (d) {
+            return d;
+        })
+        .style("font-size", "11px");
+
 
 }
 

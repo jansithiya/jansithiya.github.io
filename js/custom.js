@@ -10,3 +10,5 @@ $("#project").change(function() {
     $("." + input).remove();
 
 });
+
+

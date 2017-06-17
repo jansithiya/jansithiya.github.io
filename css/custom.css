@@ -1,3 +1,9 @@
+svg use svg {
+    fill: inherit;
+}
+
+
+
 body{
 
     margin-top:60px;
@@ -14,14 +20,12 @@ body{
         content: " ";
         width: 100px;
         height: 100%;
-        margin-left: -30px;
+        margin-left: -20px;
         margin-right: -30px;
     }
 }
 
 .modal-dialog {
-    display: inline-block;
-    text-align: left;
     width: 60%;
 }
 
@@ -30,6 +34,7 @@ body{
     text-align: left;
     padding-left: 5px;
 }
+
 
 .roleButton {
 
@@ -115,6 +120,7 @@ body{
     margin-left: 3%;
     margin-right: 100px;
     text-align: center;
+    font-family: "Comic Sans MS";
 }
 
 .topwell.project kbd{
@@ -144,3 +150,4 @@ body{
         visibility: hidden;
     }
 }
+

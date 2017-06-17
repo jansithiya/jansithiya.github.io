@@ -10,8 +10,7 @@ var jobs = workData.job.push({
         "place": "Madurai",
         "country": "India",
         "field": ["Business Intelligence", "Data Visualization", "Data Analytics"],
-        "Description1": "Design and develop BI dashboard and reporting solutions based on open source libraries and commercial tools",
-        "Description2": "Prototype design and build advanced front-end web based data visualisation and visual analytics app"
+        "Description": "Design UI and develop Business Intelligence dashboards and Visualization web app leveraging open source and commercial tools. Provide Web Analytics consulting for an emerging Entertainment & Lifestyle platform"
     }, {
         "jobID": 2,
         "role": "Research Assistant - Visual Analytics",
@@ -21,8 +20,7 @@ var jobs = workData.job.push({
         "place": "Leuven",
         "country": "Belgium",
         "field": ["Data Visualization", "Data Mining", "Data Analytics"],
-        "Description1": "Data Mining on Electronic Health Records (EHR) such as comorbidity pattern mining, detection of correlations, scenario analysis leveraging association rule mining and network analysis using R",
-        "Description2": "Scalable and large data visualization: Developed scalable visualisation solution to explore large hierarchical data, temporal and textual data based on degree of interest and focus + context approach",
+        "Description": "Data Mining and visual exploration of Flanders Electronic Health Records (EHR) data and built scalable visualization web applicaton for visualizing large hierarchical and textual data based on degree of interest approach"
     },
     {
         "jobID": 3,
@@ -33,8 +31,7 @@ var jobs = workData.job.push({
         "place": "Bangalore",
         "country": "India",
         "field": ["Business Intelligence", "Data Visualization", "Data Analytics"],
-        "Description1": "Built semi-automated tools for wrangling, aggregating and scaling large data sets using R",
-        "Description2": "Designed UI and developed multiple BI dashboard and reporting solution using Tableau for APAC Customer Communication Services division",
+        "Description": "Developed multiple Tableau BI dashboards for APAC Sales division and developed predictive modeling for customer communication strategy based on consumer behavior/interaction with system",
     },
     {
         "jobID": 4,
@@ -45,9 +42,7 @@ var jobs = workData.job.push({
         "place": "Paris",
         "country": "France",
         "field": ["Business Intelligence"],
-        "Description1": "Collaborated with a startup named Slemma and built uses cases for their BI tool targeting diverse industries",
-        "Description2": "Led 2 BI migration projects from Excel and BO to Tableau "
-
+        "Description": "Collaborated with a startup named Slemma and built uses cases for their BI tool targeting diverse industries and led Tableau migration projects"
     },
     {
         "jobID": 5,
@@ -58,8 +53,8 @@ var jobs = workData.job.push({
         "place": "Paris",
         "country": "France",
         "field": ["Data Analytics", "Data Mining"],
-        "Description1": "Deep dive analysis of B2B data from multiple sources involving customer life cycle",
-        "Description2": "Designed and automated excel based marketing engagement dashboards that tracked key performance metrics"
+        "Description": "Deep dive analysis of merchant life cycle from on-boarding to experience and engagement. Designed and automated excel based marketing engagement dashboards that tracked key performance metrics"
+
     },
     {
         "jobID": 6,
@@ -70,8 +65,7 @@ var jobs = workData.job.push({
         "place": "Nice",
         "country": "France",
         "field": ["Data Analytics", "Market Research"],
-        "Description1": "Analyzed periodic sales and developed sales forecast for global clients",
-        "Description2": "Product gap analysis and conducted market research on potential for cruise IT solutions in APAC",
+        "Description": "Analyzed periodic sales and developed sales forecast to drive Ferry IT sales and conducted market research on potential for cruise IT in APAC"
     });
 
 var education = workData.education.push({
