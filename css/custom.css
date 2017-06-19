@@ -2,11 +2,9 @@ svg use svg {
     fill: inherit;
 }
 
+body {
 
-
-body{
-
-    margin-top:60px;
+    margin-top: 60px;
 }
 
 .modal {
@@ -34,7 +32,6 @@ body{
     text-align: left;
     padding-left: 5px;
 }
-
 
 .roleButton {
 
@@ -82,10 +79,10 @@ body{
     color: white
 }
 
-#keyDomain{
+#keyDomain {
 
     margin-left: 100px;
-    padding-top:15px;
+    padding-top: 15px;
 }
 
 .BI kbd {
@@ -93,29 +90,28 @@ body{
     background-color: #ff6c5f;
 }
 
-.viz kbd{
+.viz kbd {
     font-weight: bold;
     background-color: #ffc168;
 
 }
 
-.analytics kbd{
+.analytics kbd {
     font-weight: bold;
     background-color: #1cc7d0;
 
 }
 
-.resume kbd{
-    margin-left:5px;
+.resume kbd {
+    margin-left: 5px;
     background-color: #56a0d3;
 }
 
-.resume .fa{
+.resume .fa {
     font-size: 20px;
 }
 
-
-.topwell{
+.topwell {
 
     margin-left: 3%;
     margin-right: 100px;
@@ -123,15 +119,15 @@ body{
     font-family: "Comic Sans MS";
 }
 
-.topwell.project kbd{
-    background-color:#6a737b;
+.topwell.project kbd {
+    background-color: #6a737b;
 }
 
-
-footer{
+footer {
 
     margin-left: 30%;
 }
+
 @media (max-width: 768px) {
 
     .btn-group {
@@ -139,27 +135,30 @@ footer{
         display: none;
     }
 
-    #keyDomain{
+    #keyDomain {
 
         visibility: hidden;
     }
-    .topwell{
 
-     margin: 0px;
+    .topwell {
+
+        margin: 0px;
 
     }
-    .topwell.project{
-        padding-top:10px;
+
+    .topwell.project {
+        padding-top: 10px;
     }
 
-    .navbar-right{
+    .navbar-right {
         visibility: hidden;
     }
 
-    footer{
+    footer {
         margin: 0;
     }
 }
+
 
 
 
