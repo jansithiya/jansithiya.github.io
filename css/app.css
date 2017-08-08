@@ -1,0 +1,103 @@
+body {
+    margin-top:70px;
+    font-family: Georgia, serif;
+}
+
+/* Dropdown list rank category*/
+#categoryDropdown {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 10%;
+    height: 25px;
+    display: inline;
+}
+
+.form-group label {
+    margin-top: 10px;
+    margin-left: 60px;
+    display: inline;
+    margin-bottom: 10px;
+}
+
+/* for the min and max values */
+.metricRange {
+    font-family: Georgia, serif;
+    fill: #000000;
+    font-weight: 500;
+    font-size: 13px;
+}
+
+h5 {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: inline;
+}
+
+kbd{
+    background-color: #56a0d3;
+}
+/* heading style */
+.columnHeading {
+    font-size: 18px;
+    fill: #000000;
+    font-weight: 700;
+    font-family: Palatino Linotype;
+}
+
+/* heading reference line */
+.headingLine {
+    stroke: #737373;
+}
+
+/* metric title text styling */
+.mainTitle.text {
+    fill: #231f20;
+    font-family: Palatino Linotype;
+    font-weight: 600;
+}
+
+.mainTitle.values {
+    font-family: Palatino Linotype;
+    font-size: 13px;
+    fill: #4d4f53;
+
+}
+
+/* line for benchmark viz */
+.benchmarkLine {
+    stroke-width: 6px;
+    stroke:#a5acaf;
+}
+
+/* current value circle */
+.currentValue {
+    fill: #146eb4;
+}
+
+/* for the tooltip */
+div#tooltip {
+    width: 180px;
+    height: 45px;
+    padding-left: 10px;
+    padding-top: 8px;
+    font: 12px sans-serif;
+    background: #b3dcff;
+    color: #333333;
+    border: 0px;
+    border-radius: 8px;
+    pointer-events: none;
+
+}
+
+#dealerName{
+    font-size: 15px;
+    background-color: #6a737b;
+}
+/* colors utilized or defined within the app.js *
+
+
+1. Horizontal line below column heading: "#a1a1a4"
+
+
+ */
