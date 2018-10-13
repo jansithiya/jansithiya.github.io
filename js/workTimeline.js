@@ -72,7 +72,7 @@ function renderTimeline(workData) {
         .attr("class", "work role")
         .attr("width", workWidth - (axisShift + 50))
         .attr("height", function (d) {
-            return yScale(d.from) - yScale(d.to) + 20
+            return yScale(d.from) - yScale(d.to)
         })
         .attr("x", (axisShift + rectWidth + 130))
         .attr("y", function (d) {
@@ -87,11 +87,28 @@ function renderTimeline(workData) {
     });
 
 
+    $(".roleButton").on("click", function () {
+
+        console.log($("#myModal").position())
+        var buttonContent = this.textContent, description1, description2, description3;
+
+        var content = workData.job.forEach(function (d) {
+            if (d.role == buttonContent) {
+                description1 = d.Description1;
+                description2 = d.Description2;
+                description3 = d.Description3;
+            }
+        });
+
+        $(".modal-body").html('<span class="glyphicon glyphicon-star">' + '</span>' + ' ' + description1 + '<br>' + '<span class="glyphicon glyphicon-star">' + '</span>' + ' ' + description2);
+    });
+
+
     var workCompany = rectData.append("svg:foreignObject")
         .attr("class", "work company")
-        .attr("width", 150)
+        .attr("width", axisShift - 140 - 50)
         .attr("height", function (d) {
-            return yScale(d.from) - yScale(d.to) + 25
+            return yScale(d.from) - yScale(d.to)
         })
         .attr("x", (axisShift + 20))
         .attr("y", function (d) {
@@ -134,7 +151,6 @@ function renderTimeline(workData) {
         })
         .attr("fill-opacity", 0.8);
 
-
     var eduData = workSvg.selectAll(".edu")
         .data(workData.education.filter(function (d) {
             return d.eduID != 3
@@ -156,8 +172,8 @@ function renderTimeline(workData) {
 
     var eduCap = eduData.append("svg:foreignObject")
         .attr("class", "edu eduCap")
-        .attr("width", 50)
-        .attr("height", 40)
+        .attr("width", 20)
+        .attr("height", 20)
         .attr("x", (axisShift - 140))
         .attr("y", function (d) {
             return (yScale(d.to));
@@ -174,7 +190,7 @@ function renderTimeline(workData) {
         .attr("height", function (d) {
             return yScale(d.from) - yScale(d.to)
         })
-        .attr('x', -5)
+        .attr('x', 5)
         .attr("y", function (d) {
             return (yScale(d.to) + 40);
         })
@@ -192,6 +208,7 @@ function renderTimeline(workData) {
         .attr("height", function (d) {
             return yScale(d.from) - yScale(d.to)
         })
+        .attr('x', 10)
         .attr("y", function (d) {
             if (d.eduID == 1) {
                 return (yScale(d.to) + 90);
@@ -218,6 +235,7 @@ function renderTimeline(workData) {
         .attr("height", function (d) {
             return yScale(d.from) - yScale(d.to)
         })
+        .attr('x', 10)
         .attr("y", function (d) {
 
             return (yScale(d.to) + 100)
