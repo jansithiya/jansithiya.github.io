@@ -2,7 +2,19 @@ var workData = {"job": [], "education": []};
 
 
 var jobs = workData.job.push({
-        "jobID": 1,
+    "jobID": 1,
+    "role": "Business Intelligence Developer",
+    "company": "Chegg",
+    "from": "September 2017",
+    "to": "November 2018",
+    "place": "New Delhi",
+    "country": "India",
+    "field": ["Business Intelligence", "Datawarehouse", "Big Data", "Data Visualization", "Data Analytics"],
+    "Description": "Build scalable ETL pipeline leverging spark, python and data integration tools, Build and institutionalize Tableau/Domo dashboards "
+    },
+    
+    {
+        "jobID": 2,
         "role": "Independent Consultant",
         "company": "Freelance",
         "from": "April 2017",
@@ -12,7 +24,7 @@ var jobs = workData.job.push({
         "field": ["Business Intelligence", "Data Visualization", "Data Analytics"],
         "Description": "Design UI and develop Business Intelligence dashboards and Visualization web app leveraging open source and commercial tools. Provide Web Analytics consulting for an emerging Entertainment & Lifestyle platform"
     }, {
-        "jobID": 2,
+        "jobID": 3,
         "role": "Research Assistant - Visual Analytics",
         "company": "KU Leuven",
         "from": "June 2015",
@@ -23,7 +35,7 @@ var jobs = workData.job.push({
         "Description": "Data Mining and visual exploration of Flanders Electronic Health Records (EHR) data and built scalable visualization web applicaton for visualizing large hierarchical and textual data based on degree of interest approach"
     },
     {
-        "jobID": 3,
+        "jobID": 4,
         "role": "Sales Analytics Consultant",
         "company": "FICO",
         "from": "March 2014",
@@ -34,7 +46,7 @@ var jobs = workData.job.push({
         "Description": "Developed multiple Tableau BI dashboards for APAC Sales division and developed predictive modeling for customer communication strategy based on consumer behavior/interaction with system",
     },
     {
-        "jobID": 4,
+        "jobID": 5,
         "role": "BI Support Consultant",
         "company": "Freelance",
         "from": "October 2013",
@@ -45,7 +57,7 @@ var jobs = workData.job.push({
         "Description": "Collaborated with a startup named Slemma and built uses cases for their BI tool targeting diverse industries and led Tableau migration projects"
     },
     {
-        "jobID": 5,
+        "jobID": 6,
         "role": "B2B Marketing Analyst",
         "company": "PayPal",
         "from": "April 2013",
@@ -57,7 +69,7 @@ var jobs = workData.job.push({
 
     },
     {
-        "jobID": 6,
+        "jobID": 7,
         "role": " Intern - Distribution Marketing",
         "company": "Amadeus",
         "from": "June 2012",
@@ -90,7 +102,6 @@ var education = workData.education.push({
         "country": "India"
     }
 );
-
 
 var dateParse = d3.timeParse("%B %Y");
 
