@@ -99,7 +99,7 @@ function renderTimeline(workData) {
 
     workCompany.append('p')
         .html(function (d) {
-            if (d.jobID != 4) {
+            if (d.jobID != 5) {
                 return (d.company + "<br>" + "(" + d.country + ")")
             }
             else {
