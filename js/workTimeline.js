@@ -80,6 +80,28 @@ function renderTimeline(workData) {
         })
         .append("xhtml:div")
 
+    workRole.html(function (d, i) {
+        return '<button type="button" class="btn btn-info btn-sm roleButton" id="role" data-toggle="modal" data-target="#myModal">' + d.role + '</button>' + '<div id="myModal" class="modal fade" role="dialog">' + '<div class="modal-dialog">' + '<div class="modal-content">'
+            + '<div class="modal-header">' + '<button type="button" class="close" data-dismiss="modal">' + '&times;' + '</button>' + '<h8  class="modal-title">' + 'Details' + '</h8>' + '</div>' + '<div class="modal-body">' + '<p>' + "" + '</p>' + '</div>' + '</div>' +
+            '</div>' + '</div>';
+    });
+
+
+    $(".roleButton").on("click", function () {
+
+        console.log($("#myModal").position())
+        var buttonContent = this.textContent, description1, description2, description3;
+
+        var content = workData.job.forEach(function (d) {
+            if (d.role == buttonContent) {
+                description1 = d.Description1;
+                description2 = d.Description2;
+            }
+        });
+
+        $(".modal-body").html('<span class="glyphicon glyphicon-star">' + '</span>' + ' ' + description1 + '<br>' + '<span class="glyphicon glyphicon-star">' + '</span>' + ' ' + description2);
+    });
+
 
     var workCompany = rectData.append("svg:foreignObject")
         .attr("class", "work company")
