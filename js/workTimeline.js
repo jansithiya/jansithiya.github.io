@@ -81,11 +81,9 @@ function renderTimeline(workData) {
         .append("xhtml:div")
 
     workRole.html(function (d, i) {
-        return '<button type="button" class="btn btn-info btn-sm roleButton" id="role" data-toggle="modal" data-target="#myModal">' + d.role + '</button>' + '<div id="myModal" class="modal fade" role="dialog">' + '<div class="modal-dialog">' + '<div class="modal-content">'
-            + '<div class="modal-header">' + '<button type="button" class="close" data-dismiss="modal">' + '&times;' + '</button>' + '<h8  class="modal-title">' + 'Details' + '</h8>' + '</div>' + '<div class="modal-body">' + '<p>' + "" + '</p>' + '</div>' + '</div>' +
-            '</div>' + '</div>';
-    });
+        return '<button type="button" class="btn btn-info btn-sm roleButton" id="role" data-toggle="modal" data-target="#myModal">' + d.role + '</button>' 
 
+    });
 
     var workCompany = rectData.append("svg:foreignObject")
         .attr("class", "work company")
