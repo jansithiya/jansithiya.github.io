@@ -192,7 +192,7 @@ function renderTimeline(workData) {
         .attr('x', 10)
         .attr("y", function (d) {
             if (d.eduID == 1) {
-                return (yScale(d.to) + 90);
+                return (yScale(d.to) + 100);
             }
             else {
                 return (yScale(d.to) + 70)
