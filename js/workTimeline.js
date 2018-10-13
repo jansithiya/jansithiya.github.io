@@ -87,21 +87,6 @@ function renderTimeline(workData) {
     });
 
 
-    $(".roleButton").on("click", function () {
-
-        console.log($("#myModal").position())
-        var buttonContent = this.textContent, description;
-
-        var content = workData.job.forEach(function (d) {
-            if (d.role == buttonContent) {
-                description = d.Description
-            }
-        });
-
-        $(".modal-body").html('<span class="glyphicon glyphicon-star">' + '</span>' + ' ' + description);
-    });
-
-
     var workCompany = rectData.append("svg:foreignObject")
         .attr("class", "work company")
         .attr("width", 150)
