@@ -9,13 +9,13 @@ var jobs = workData.job.push({
     "to": "November 2018",
     "place": "New Delhi",
     "country": "India",
-    "field": ["Business Intelligence", "Datawarehouse", "Big Data", "Data Visualization", "Data Analytics"],
+    "field": ["Business Intelligence","Data Visualization", "Data Analytics"],
     "Description": "Build scalable ETL pipeline leverging spark, python and data integration tools, Build and institutionalize Tableau/Domo dashboards "
     },
     
     {
         "jobID": 2,
-        "role": "Independent Consultant",
+        "role": "Independent BI/Viz Consultant",
         "company": "Freelance",
         "from": "April 2017",
         "to": "July 2017",
