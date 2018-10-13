@@ -144,7 +144,7 @@ function renderTimeline(workData) {
         .attr("y", function (d) {
             return yScale(d.to);
         })
-        .attr("width", 30)
+        .attr("width", 25)
         .attr("height", function (d) {
             return yScale(d.from) - yScale(d.to);
         })
