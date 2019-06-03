@@ -18,7 +18,7 @@ var jobs = workData.job.push({
         "role": "Data Visualization Consultant",
         "company": "Freelance",
         "from": "April 2017",
-        "to": "July 2017",
+        "to": "August 2017",
         "place": "Madurai",
         "country": "India",
         "field": ["Business Intelligence", "Data Visualization", "Data Analytics"],
