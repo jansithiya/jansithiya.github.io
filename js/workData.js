@@ -6,7 +6,7 @@ var jobs = workData.job.push({
     "role": "Business Intelligence Developer",
     "company": "Chegg",
     "from": "September 2017",
-    "to": "November 2018",
+    "to": "July 2019",
     "place": "New Delhi",
     "country": "India",
     "field": ["Business Intelligence","Data Visualization", "Data Analytics"],
@@ -15,7 +15,7 @@ var jobs = workData.job.push({
     
     {
         "jobID": 2,
-        "role": "Independent BI/Viz Consultant",
+        "role": "Data Visualization Consultant",
         "company": "Freelance",
         "from": "April 2017",
         "to": "July 2017",
@@ -36,7 +36,7 @@ var jobs = workData.job.push({
     },
     {
         "jobID": 4,
-        "role": "Sales Analytics Consultant",
+        "role": "Data Analytics Consultant APAC",
         "company": "FICO",
         "from": "March 2014",
         "to": "May 2015",
@@ -47,21 +47,10 @@ var jobs = workData.job.push({
     },
     {
         "jobID": 5,
-        "role": "BI Support Consultant",
-        "company": "Freelance",
-        "from": "October 2013",
-        "to": "January 2014",
-        "place": "Paris",
-        "country": "France",
-        "field": ["Business Intelligence"],
-        "Description": "Collaborated with a startup named Slemma and built uses cases for their BI tool targeting diverse industries and led Tableau migration projects"
-    },
-    {
-        "jobID": 6,
-        "role": "B2B Marketing Analyst",
+        "role": "B2B Marketing Analyst (Internship)",
         "company": "PayPal",
         "from": "April 2013",
-        "to": "September 2013",
+        "to": "November 2013",
         "place": "Paris",
         "country": "France",
         "field": ["Data Analytics", "Data Mining"],
@@ -69,7 +58,7 @@ var jobs = workData.job.push({
 
     },
     {
-        "jobID": 7,
+        "jobID": 6,
         "role": " Intern - Distribution Marketing",
         "company": "Amadeus",
         "from": "June 2012",
@@ -79,6 +68,7 @@ var jobs = workData.job.push({
         "field": ["Data Analytics", "Market Research"],
         "Description": "Analyzed periodic sales and developed sales forecast to drive Ferry IT sales and conducted market research on potential for cruise IT in APAC"
     });
+
 
 var education = workData.education.push({
         "eduID": 1,
@@ -102,6 +92,7 @@ var education = workData.education.push({
         "country": "India"
     }
 );
+
 
 var dateParse = d3.timeParse("%B %Y");
 
