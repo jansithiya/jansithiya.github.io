@@ -154,9 +154,9 @@ function renderTimeline(workData) {
 
     var eduCap = eduData.append("svg:foreignObject")
         .attr("class", "edu eduCap")
-        .attr("width", 20)
-        .attr("height", 20)
-        .attr("x", (axisShift - 140))
+        .attr("width", 30)
+        .attr("height", 40)
+        .attr("x", (axisShift - 150))
         .attr("y", function (d) {
             return (yScale(d.to));
         })
