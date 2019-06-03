@@ -72,7 +72,7 @@ function renderTimeline(workData) {
         .attr("class", "work role")
         .attr("width", workWidth - (axisShift + 50))
         .attr("height", function (d) {
-            return yScale(d.from) - yScale(d.to)
+            return yScale(d.from) - yScale(d.to) + 20
         })
         .attr("x", (axisShift + rectWidth + 130))
         .attr("y", function (d) {
@@ -81,25 +81,26 @@ function renderTimeline(workData) {
         .append("xhtml:div")
 
     workRole.html(function (d, i) {
-        return '<button type="button" class="btn btn-info btn-sm roleButton" id="role" data-toggle="modal" data-target="#myModal">' + d.role + '</button>' 
-
+        return '<button type="button" class="btn btn-info btn-sm roleButton" id="role"  data-target="#myModal">' + d.role + '</button>' 
     });
+
+
 
     var workCompany = rectData.append("svg:foreignObject")
         .attr("class", "work company")
-        .attr("width", axisShift - 140 - 50)
+        .attr("width", axisShift - 120 - 30)
         .attr("height", function (d) {
-            return yScale(d.from) - yScale(d.to)
+            return yScale(d.from) - yScale(d.to) + 10
         })
         .attr("x", (axisShift + 20))
         .attr("y", function (d) {
-            return (yScale(d.to) + (yScale(d.from) - yScale(d.to)) / 2) - 5;
+            return (yScale(d.to) + (yScale(d.from) - yScale(d.to)) / 2) ;
         })
         .append("xhtml:div");
 
     workCompany.append('p')
         .html(function (d) {
-            if (d.jobID != 5) {
+            if (d.jobID != 0) {
                 return (d.company + "<br>" + "(" + d.country + ")")
             }
             else {
@@ -144,7 +145,7 @@ function renderTimeline(workData) {
         .attr("y", function (d) {
             return yScale(d.to);
         })
-        .attr("width", 25)
+        .attr("width", 30)
         .attr("height", function (d) {
             return yScale(d.from) - yScale(d.to);
         })
@@ -171,7 +172,7 @@ function renderTimeline(workData) {
         .attr("height", function (d) {
             return yScale(d.from) - yScale(d.to)
         })
-        .attr('x', 5)
+        .attr('x', -5)
         .attr("y", function (d) {
             return (yScale(d.to) + 40);
         })
@@ -189,7 +190,7 @@ function renderTimeline(workData) {
         .attr("height", function (d) {
             return yScale(d.from) - yScale(d.to)
         })
-        .attr('x', 10)
+        .attr('x', -5)
         .attr("y", function (d) {
             if (d.eduID == 1) {
                 return (yScale(d.to) + 90);
@@ -214,7 +215,7 @@ function renderTimeline(workData) {
         .attr("class", "edu major")
         .attr("width", 150)
         .attr("height", function (d) {
-            return yScale(d.from) - yScale(d.to)
+            return yScale(d.from) - yScale(d.to) 
         })
         .attr('x', 10)
         .attr("y", function (d) {
