@@ -107,4 +107,3 @@ workData.job.forEach(function (d) {
     d.to = dateParse(d.to);
     d.field.sort();
 });
-
