@@ -4,9 +4,9 @@ var workData = {"job": [], "education": []};
 var jobs = workData.job.push({
     "jobID": 0,
     "role": "Senior Data Analyst",
-    "company": "Just Eat Takeaway.com",
+    "company": "Takeaway.com",
     "from": "October 2019",
-    "to": "January 2021",
+    "to": "December 2020",
     "place": "Berlin",
     "country": "Germany",
     "field": ["Business Intelligence","Data Visualization", "Data Analytics"],
