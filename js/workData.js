@@ -2,7 +2,7 @@ var workData = {"job": [], "education": []};
 
 
 var jobs = workData.job.push({
-    "jobID": 0,
+    "jobID": 1,
     "role": "Senior Data Analyst",
     "company": "Takeaway",
     "from": "October 2019",
@@ -13,7 +13,7 @@ var jobs = workData.job.push({
     "Description": "Data Analysis for logistics "
     },
     {
-    "jobID": 1,
+    "jobID": 2,
     "role": "Business Intelligence Developer",
     "company": "Chegg",
     "from": "September 2017",
@@ -25,7 +25,7 @@ var jobs = workData.job.push({
     },
     
     {
-        "jobID": 2,
+        "jobID": 3,
         "role": "Data Visualization Consultant",
         "company": "Freelance",
         "from": "April 2017",
@@ -35,7 +35,7 @@ var jobs = workData.job.push({
         "field": ["Business Intelligence", "Data Visualization", "Data Analytics"],
         "Description": "Design UI and develop Business Intelligence dashboards and Visualization web app leveraging open source and commercial tools. Provide Web Analytics consulting for an emerging Entertainment & Lifestyle platform"
     }, {
-        "jobID": 3,
+        "jobID": 4,
         "role": "Research Assistant - Visual Analytics",
         "company": "KU Leuven",
         "from": "June 2015",
@@ -46,7 +46,7 @@ var jobs = workData.job.push({
         "Description": "Data Mining and visual exploration of Flanders Electronic Health Records (EHR) data and built scalable visualization web applicaton for visualizing large hierarchical and textual data based on degree of interest approach"
     },
     {
-        "jobID": 4,
+        "jobID": 5,
         "role": "Data Analytics Consultant APAC",
         "company": "FICO",
         "from": "March 2014",
@@ -57,7 +57,7 @@ var jobs = workData.job.push({
         "Description": "Developed multiple Tableau BI dashboards for APAC Sales division and developed predictive modeling for customer communication strategy based on consumer behavior/interaction with system",
     },
     {
-        "jobID": 5,
+        "jobID": 6,
         "role": "B2B Marketing Analyst (Internship)",
         "company": "PayPal",
         "from": "April 2013",
@@ -69,7 +69,7 @@ var jobs = workData.job.push({
 
     },
     {
-        "jobID": 6,
+        "jobID": 7,
         "role": " Intern - Distribution Marketing",
         "company": "Amadeus",
         "from": "June 2012",
