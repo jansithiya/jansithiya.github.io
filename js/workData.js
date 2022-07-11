@@ -3,7 +3,7 @@ var workData = {"job": [], "education": []};
 
 var jobs = workData.job.push({
     "jobID": 1,
-    "role": "Senior Data Analyst",
+    "role": "Team Lead Analytics",
     "company": "Takeaway",
     "from": "October 2019",
     "to": "December 2020",
